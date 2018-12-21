@@ -22,11 +22,6 @@
   "keywords": [
     "library"
   ],
-  "husky": {
-    "hooks": {
-      "pre-push": "yarn build && git add . && git commit -S -m 'Build'"
-    }
-  },
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "7.2.2",

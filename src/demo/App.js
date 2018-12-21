@@ -1,8 +1,8 @@
-import './css/App.css';
-import Lib from './../lib';
+import "./css/App.css";
+import Lib from "./../lib";
 
 class App {
-  constructor(){
+  constructor() {
     let libInstance = new Lib();
     console.log("Demo loaded!", libInstance);
   }

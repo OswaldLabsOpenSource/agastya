@@ -1,7 +1,7 @@
-import './css/App.css';
+import "./css/App.css";
 
 class App {
-  constructor(){
+  constructor() {
     console.log("Lib constructor called");
   }
 }

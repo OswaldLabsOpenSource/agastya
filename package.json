@@ -1,6 +1,6 @@
 {
-  "name": "@hodgef/js-library-boilerplate",
-  "version": "1.0.9",
+  "name": "agastya",
+  "version": "1.0.0",
   "main": "build/index.js",
   "scripts": {
     "start": "node scripts/start.js",
@@ -12,13 +12,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/hodgef/js-library-boilerplate"
+    "url": "https://github.com/OswaldLabsOpenSource/agastya"
   },
-  "author": "Francisco Hodge <hello@franciscohodge.com> (https://github.com/hodgef)",
+  "author": "Anand Chowdhary <mail@anandchowdhary.com>",
   "bugs": {
-    "url": "https://github.com/hodgef/js-library-boilerplate/issues"
+    "url": "https://github.com/OswaldLabsOpenSource/agastya/issues"
   },
-  "homepage": "https://github.com/hodgef/js-library-boilerplate",
+  "homepage": "https://github.com/OswaldLabsOpenSource/agastya",
   "keywords": [
     "library"
   ],
@@ -80,8 +80,8 @@
     "style-loader": "0.23.1",
     "terser-webpack-plugin": "1.1.0",
     "url-loader": "1.1.2",
-    "webpack-dev-server": "3.1.11",
     "webpack": "4.28.1",
+    "webpack-dev-server": "3.1.11",
     "webpack-manifest-plugin": "2.0.4",
     "workbox-webpack-plugin": "3.6.3"
   },
@@ -147,5 +147,7 @@
       ]
     ]
   },
-  "dependencies": {}
+  "dependencies": {
+    "scriptjs": "^2.5.9"
+  }
 }

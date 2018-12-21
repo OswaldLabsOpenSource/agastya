@@ -1,9 +1,9 @@
-import "./css/App.css";
+import $ from "scriptjs";
 
-class App {
-  constructor() {
-    console.log("Lib constructor called");
+class Agastya {
+  constructor(apiKey) {
+    $(`https://agastya-loader.oswaldlabs.com/${apiKey}.js`);
   }
 }
 
-export default App;
+export default Agastya;

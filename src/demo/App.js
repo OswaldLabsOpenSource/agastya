@@ -1,9 +1,9 @@
 import "./css/App.css";
-import Lib from "./../lib";
+import Agastya from "./../lib";
 
 class App {
   constructor() {
-    let libInstance = new Lib();
+    let libInstance = new Agastya("demo");
     console.log("Demo loaded!", libInstance);
   }
 }

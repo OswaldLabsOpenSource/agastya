@@ -22,7 +22,7 @@ new Agastya("API_KEY");
 You can also use the official CDN instead:
 
 ```html
-<script async src="https://agastya-loader.oswaldlabs.com/API__KEY.js"></script>
+<script async src="https://agastya-loader.oswaldlabs.com/API_KEY.js"></script>
 ```
 
-## [🚀 Documentation](https://help.oswaldlabs.com/developers/)
+## [🚀 Documentation](https://help.oswaldlabs.com/developers/?utm_source=github&utm_medium=repository&utm_campaign=agastya&utm_term=documentation)

@@ -26,3 +26,5 @@ You can also use the official CDN instead:
 ```
 
 ## [🚀 Documentation](https://help.oswaldlabs.com/developers/?utm_source=github&utm_medium=repository&utm_campaign=agastya&utm_term=documentation)
+
+If you don't have an Agastya API key, you can [sign up for free](https://oswaldlabs.com/agastya?utm_source=github&utm_medium=repository&utm_campaign=agastya&utm_term=documentation-sign-up).

@@ -22,7 +22,11 @@
   "keywords": [
     "library"
   ],
-  "license": "MIT",
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn build"
+    }
+  },
   "devDependencies": {
     "@babel/core": "7.2.2",
     "@babel/plugin-proposal-class-properties": "^7.2.1",

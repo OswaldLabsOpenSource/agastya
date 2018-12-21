@@ -1,6 +1,6 @@
 /*!
  * 
- *   agastya v1.0.0
+ *   agastya v2.0.1
  *   https://github.com/OswaldLabsOpenSource/agastya
  * 
  *   Copyright (c) Anand Chowdhary 

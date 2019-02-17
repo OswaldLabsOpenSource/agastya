@@ -40,12 +40,34 @@ agastya.on("open", iframe => {
 });
 ```
 
+If you're using the CDN (which is asynchronous), you can do this instead:
+
+```js
+// Initialize `on` object
+window.a11ySettings = window.a11ySettings || {};
+window.a11ySettings.on = {};
+
+// And add your listeners to it
+window.a11ySettings.on.open = iframe => {
+  console.log("Agastya was opened!", iframe);
+};
+```
+
 Available events are:
 
 | Event | Parameter | Emitted when |
 | - | - | - |
-| `open` | Agastya frame element | Agastya is opened |
-| `close` | Agastya frame element | Agastya is closed |
+| `ready` | None | Agastya is ready to listen to API calls |
+| `start` | None | Script is initialized |
+| `open` | None | Agastya is opened |
+| `close` | None | Agastya is closed |
 | `preloaded-external-css` | Stylesheet link href | Cached external CSS |
 | `loading-external-css` | Stylesheet link href | Cached external CSS |
 | `loaded-external-css` | Stylesheet link href | Cached external CSS |
+| `button-appended` | Agastya button | Button is appended to DOM |
+| `iframe-appended` | Agastya frame container | iFrame is appended to DOM |
+| `toggle` | None | Open/close toggle |
+| `cached-preferences` | Preferences object | Get preferences from store |
+| `secure-track` | Tracking data object | Tracking custom event |
+| `inject-css` | Style element | Injected style element |
+| `update-css` | CSS string | Updating styles |

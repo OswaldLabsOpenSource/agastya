@@ -26,7 +26,26 @@ You can also use the official CDN instead:
 <script async src="https://agastya-loader.oswaldlabs.com/API_KEY.js"></script>
 ```
 
-## [🚀 Documentation](https://help.oswaldlabs.com/developers/?utm_source=github&utm_medium=repository&utm_campaign=agastya&utm_term=documentation)
+## Documentation
 
-- If you don't have an Agastya API key, you can [sign up for free](https://oswaldlabs.com/platform/agastya/?utm_source=github&utm_medium=repository&utm_campaign=agastya&utm_term=documentation-sign-up).
-- Thanks to [@conorhastings](https://github.com/conorhastings) for the NPM package name!
+### Events
+
+Agastya emits events which can be used for functionality or analytics purposes.
+
+To listen to events, you can use the `on` function:
+
+```js
+agastya.on("open", iframe => {
+  console.log("Agastya was opened!", iframe);
+});
+```
+
+Available events are:
+
+| Event | Parameter | Emitted when |
+| - | - | - |
+| `open` | Agastya frame element | Agastya is opened |
+| `close` | Agastya frame element | Agastya is closed |
+| `preloaded-external-css` | Stylesheet link href | Cached external CSS |
+| `loading-external-css` | Stylesheet link href | Cached external CSS |
+| `loaded-external-css` | Stylesheet link href | Cached external CSS |

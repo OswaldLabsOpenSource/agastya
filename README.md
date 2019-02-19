@@ -71,3 +71,15 @@ Available events are:
 | `secure-track` | Tracking data object | Tracking custom event |
 | `inject-css` | Style element | Injected style element |
 | `update-css` | CSS string | Updating styles |
+
+You can remove an event using the `off` function:
+
+```js
+agastya.off("open");
+```
+
+Or, if you're using the CDN, using `window.agastya` once it has been initialized:
+
+```js
+window.agastya.off("open");
+```

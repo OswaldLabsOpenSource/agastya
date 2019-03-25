@@ -21,6 +21,12 @@ import Agastya from "agastya";
 new Agastya("API_KEY");
 ```
 
+Optionally, you can use the staging loader (beta versions):
+
+```
+new Agastya("API_KEY", true);
+```
+
 You can also use the official CDN instead:
 
 ```html

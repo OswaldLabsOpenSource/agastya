@@ -23,7 +23,7 @@ new Agastya("API_KEY");
 
 Optionally, you can use the staging loader (beta versions):
 
-```
+```js
 new Agastya("API_KEY", true);
 ```
 

@@ -1,7 +1,7 @@
 # File created using '.gitignore Generator' for Visual Studio Code: https://bit.ly/vscode-gig
 
-# Created by https://www.gitignore.io/api/macos,visualstudiocode,node
-# Edit at https://www.gitignore.io/?templates=macos,visualstudiocode,node
+# Created by https://www.gitignore.io/api/macos,visualstudiocode,node,typings
+# Edit at https://www.gitignore.io/?templates=macos,visualstudiocode,node,typings
 
 ### macOS ###
 # General
@@ -90,6 +90,7 @@ typings/
 
 # dotenv environment variables file
 .env
+.env.test
 
 # parcel-bundler cache (https://parceljs.org/)
 .cache
@@ -109,8 +110,12 @@ typings/
 # FuseBox cache
 .fusebox/
 
-#DynamoDB Local files
+# DynamoDB Local files
 .dynamodb/
+
+### Typings ###
+## Ignore downloaded typings
+typings
 
 ### VisualStudioCode ###
 .vscode/*
@@ -123,7 +128,13 @@ typings/
 # Ignore all local history of files
 .history
 
-# End of https://www.gitignore.io/api/macos,visualstudiocode,node
+# End of https://www.gitignore.io/api/macos,visualstudiocode,node,typings
 
 # Custom rules (everything added below won't be overriden by 'Generate .gitignore File' if you use 'Update' option)
 
+# Rollup cache
+.rpt2_cache
+
+# Built files
+dist/
+public/

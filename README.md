@@ -3,7 +3,8 @@
 ![Travis CI](https://travis-ci.org/OswaldLabsOpenSource/agastya.svg?branch=master)
 ![Dependencies](https://img.shields.io/david/OswaldLabsOpenSource/agastya.svg)
 ![Dev dependencies](https://img.shields.io/david/dev/OswaldLabsOpenSource/agastya.svg)
-![](https://img.shields.io/snyk/vulnerabilities/github/OswaldLabsOpenSource/agastya.svg)
+[![License](https://img.shields.io/github/license/OswaldLabsOpenSource/agastya.svg)](https://github.com/OswaldLabsOpenSource/agastya/blob/master/LICENSE)
+![Vulnerabilities](https://img.shields.io/snyk/vulnerabilities/github/OswaldLabsOpenSource/agastya.svg)
 ![Bundle size](https://img.shields.io/bundlephobia/minzip/agastya.svg)
 
 ## 📦 Get Started

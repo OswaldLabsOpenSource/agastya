@@ -1,4 +1,4 @@
-# Agastya
+# ♿ Agastya
 
 ![Travis CI](https://travis-ci.org/OswaldLabsOpenSource/agastya.svg?branch=master)
 ![Dependencies](https://img.shields.io/david/OswaldLabsOpenSource/agastya.svg)

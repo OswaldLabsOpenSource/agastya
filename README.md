@@ -18,13 +18,13 @@ yarn add agastya
 import Agastya from "agastya";
 
 // Initialize Agastya with your API key
-new Agastya("API_KEY");
+const agastya = new Agastya("API_KEY");
 ```
 
 Optionally, you can use the staging loader (beta versions):
 
 ```js
-new Agastya("API_KEY", true);
+const agastya = new Agastya("API_KEY", true);
 ```
 
 You can also use the official CDN instead:
@@ -33,7 +33,15 @@ You can also use the official CDN instead:
 <script async src="https://agastya-loader.oswaldlabs.com/API_KEY.js"></script>
 ```
 
-## [Documentation](https://help.oswaldlabs.com/developers/)
+Once you've created the Agastya object, you can start using the API:
+
+```js
+agastya.open(); // Open the Agastya widget
+agastya.api("enableMode", "read-aloud"); // Start read aloud model
+agastya.secureTrack({ hello: "world" }); // Track a custom event
+```
+
+## [API Documentation](https://help.oswaldlabs.com/developers/)
 
 - [Getting started](https://help.oswaldlabs.com/developers/)
 - [Installation](https://help.oswaldlabs.com/developers/installation.html)

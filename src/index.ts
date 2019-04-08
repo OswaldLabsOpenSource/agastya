@@ -28,13 +28,13 @@ const doAction = (action: string, ...params: any) =>
   });
 
 export default class Agastya {
-  constructor(apiKey: string, staging: boolean = false) {
-    $(
-      `https://${
-        staging ? "staging-" : ""
-      }agastya-loader.oswaldlabs.com/${apiKey}.js`,
-      () => {}
-    );
+  constructor(apiKey: string, channel: string = "production") {
+    let url = `https://platform.oswaldlabs.com/_/${apiKey}.js`;
+    if (channel === "development" || channel === "dev")
+      url = `https://platform.oswaldlabs.com/_/development/${apiKey}.js`;
+    if (channel === "acceptance" || channel === "beta")
+      url = `https://platform.oswaldlabs.com/_/acceptance/${apiKey}.js`;
+    $(url, () => {});
   }
   open(page?: string) {
     return doAction("open", page);

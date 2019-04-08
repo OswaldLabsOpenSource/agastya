@@ -21,10 +21,12 @@ import Agastya from "agastya";
 const agastya = new Agastya("API_KEY");
 ```
 
-Optionally, you can use the staging loader (beta versions):
+Optionally, you can use a specific channel:
 
 ```js
-const agastya = new Agastya("API_KEY", true);
+const agastya = new Agastya("API_KEY", "production"); // Production (default)
+const agastya = new Agastya("API_KEY", "beta"); // Beta (stable)
+const agastya = new Agastya("API_KEY", "dev"); // Nighly/development (breaking changes)
 ```
 
 You can also use the official CDN instead:

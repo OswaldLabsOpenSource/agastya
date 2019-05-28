@@ -4,7 +4,7 @@ declare global {
     }
 }
 export default class Agastya {
-    constructor(apiKey: string, staging?: boolean);
+    constructor(apiKey: string, channel?: string);
     open(page?: string): Promise<{}>;
     close(): Promise<{}>;
     toggle(): Promise<{}>;

@@ -1,6 +1,6 @@
 {
   "name": "agastya",
-  "version": "4.0.0",
+  "version": "4.1.0",
   "description": "Web accessibility made simple",
   "main": "docs/index.js",
   "module": "docs/index.js",

@@ -32,14 +32,14 @@ const agastya = new Agastya("API_KEY", "dev"); // Nighly/development (breaking c
 You can also use the official CDN instead:
 
 ```html
-<script async src="https://agastya-loader.oswaldlabs.com/API_KEY.js"></script>
+<script async src="https://platform.oswaldlabs.com/_/API_KEY.js"></script>
 ```
 
 Once you've created the Agastya object, you can start using the API:
 
 ```js
 agastya.open(); // Open the Agastya widget
-agastya.api("enableMode", "read-aloud"); // Start read aloud model
+agastya.api("enableMode", "read-aloud"); // Start read aloud mode
 agastya.secureTrack({ hello: "world" }); // Track a custom event
 ```
 

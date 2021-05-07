@@ -5222,9 +5222,10 @@ ts-node@^9.0.0:
     source-map-support "^0.5.17"
     yn "3.1.1"
 
-tsc@^1.20150623.0:
-  version "1.20150623.0"
-  resolved "https://registry.yarnpkg.com/tsc/-/tsc-1.20150623.0.tgz#4ebc3c774e169148cbc768a7342533f082c7a6e5"
+tsc@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/tsc/-/tsc-2.0.2.tgz#642b4b4ec13abc44e7ee680b5fb2fc19ff4ffeb7"
+  integrity sha512-xsdhvSg54I66NRa34E1ugN2eumRShCyATmTt38hJkcAZ8D5DEG87d70RlwuqSV3iSHRtlBxjyz3MsL5ruDdj1A==
 
 tslib@^1.9.0:
   version "1.9.3"

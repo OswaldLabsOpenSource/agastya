@@ -13,7 +13,7 @@
   "license": "MIT",
   "scripts": {
     "start": "concurrently \"yarn watch\" \"yarn watch-demo\" \"yarn serve\" \"yarn prettier-watch\"",
-    "build": "webpack -p --config webpack.config.ts",
+    "build": "webpack --config webpack.config.ts",
     "build-demo": "tsc docs/demo.ts",
     "watch": "onchange 'src/**/*.{js,jsx,ts,tsx,scss,css}' -- yarn build",
     "watch-demo": "onchange 'docs/{demo.ts,scss,css}' -- yarn build-demo",

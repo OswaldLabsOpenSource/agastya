@@ -1,13 +1,23 @@
-import $ from "scriptjs";
-
 declare global {
   interface Window {
     agastya: any;
   }
 }
 
-const doAction = (action: string, ...params: any) =>
+const isBrowser = () => typeof window !== "undefined";
+const browserOnlyError = () => new Error("Agastya requires a browser environment");
+
+const loadScript = (url: string) => {
+  if (!isBrowser()) return;
+  const scriptjs = require("scriptjs");
+  const $ = scriptjs.default || scriptjs;
+  $(url, () => {});
+};
+
+const doAction = (action: string, ...params: any): Promise<{}> =>
   new Promise((resolve, reject) => {
+    if (!isBrowser()) return reject(browserOnlyError());
+
     if (window.agastya && window.agastya.ready) {
       if (typeof window.agastya[action] === "function") {
         return resolve(window.agastya[action](...params));
@@ -34,7 +44,7 @@ export default class Agastya {
       url = `https://platform.oswaldlabs.com/_/development/${apiKey}.js`;
     if (channel === "acceptance" || channel === "beta")
       url = `https://platform.oswaldlabs.com/_/acceptance/${apiKey}.js`;
-    $(url, () => {});
+    loadScript(url);
   }
   open(page?: string) {
     return doAction("open", page);
@@ -80,4 +90,6 @@ export default class Agastya {
   }
 }
 
-(<any>window).AgastyaModule = Agastya;
+if (isBrowser()) {
+  (<any>window).AgastyaModule = Agastya;
+}

@@ -19,7 +19,9 @@ const config: webpack.Configuration = {
   output: {
     filename: "index.js",
     path: path.resolve(__dirname, "docs"),
-    libraryTarget: "umd"
+    libraryTarget: "umd",
+    globalObject: "typeof self !== 'undefined' ? self : this",
+    hashFunction: "sha256"
   }
 };
 

@@ -1,6 +1,6 @@
 # ♿ Agastya
 
-![Travis CI](https://travis-ci.org/OswaldLabsOpenSource/agastya.svg?branch=master)
+[![CI](https://github.com/OswaldLabsOpenSource/agastya/actions/workflows/ci.yml/badge.svg)](https://github.com/OswaldLabsOpenSource/agastya/actions/workflows/ci.yml)
 ![Dependencies](https://img.shields.io/david/OswaldLabsOpenSource/agastya.svg)
 ![Dev dependencies](https://img.shields.io/david/dev/OswaldLabsOpenSource/agastya.svg)
 [![License](https://img.shields.io/github/license/OswaldLabsOpenSource/agastya.svg)](https://github.com/OswaldLabsOpenSource/agastya/blob/master/LICENSE)

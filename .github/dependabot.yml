@@ -1,0 +1,27 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "04:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: ts-loader
+    versions:
+    - 9.0.0
+    - 9.0.2
+    - 9.1.0
+  - dependency-name: webpack
+    versions:
+    - 5.34.0
+  - dependency-name: concurrently
+    versions:
+    - 6.0.0
+    - 6.0.1
+  - dependency-name: "@types/webpack"
+    versions:
+    - 5.0.0
+  - dependency-name: sass-loader
+    versions:
+    - 11.0.0
